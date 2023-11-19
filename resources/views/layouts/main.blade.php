@@ -33,6 +33,13 @@
       </div>
     </div>
 </nav>
+  @if (session('msg'))
+    <div class="toast bg-success fade show" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header"><strong class="mr-auto">Sucesso!</strong><small>Subtitle</small><button data-dismiss="toast" type="button" class="ml-2 mb-1 close" aria-label="Close"><span aria-hidden="true">×</span></button>
+      </div>
+      <div class="toast-body">{{session('msg')}}</div>
+    </div>
+  @endif
   @yield('content'){{-- Utilizado para implementar o conteúdo --}}
 
   <footer>Events &copy; 2023</footer>
