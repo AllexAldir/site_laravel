@@ -5,6 +5,7 @@ use App\Http\Controllers\EventController;
 
 Route::get('/', [EventController::class, 'index']); //-> Utilizando a estrutura de lógica para o controller
 Route::get('/events/create', [EventController::class, 'events']);
+Route::post('/events', [EventController::class, 'store']);
 
 Route::get('/contatos', function () {
   return view('contatos');

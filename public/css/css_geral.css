@@ -1,3 +1,9 @@
 * {
   font-family: 'roboto';
 }
+
+.contanierform
+{
+  width: 60%;
+  margin: auto;
+}
