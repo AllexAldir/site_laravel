@@ -32,6 +32,16 @@ class EventController extends Controller
 
     $event->save();
 
-    return redirect('/')->with('msg','Evento criado com sucesso!');
+    return redirect('/')->with('msg', 'Evento criado com sucesso!');
+  }
+
+  public function show(Request $id)
+  {
+
+    $data = base64_decode(request('id'));
+    //dd($data);
+    $registro = Event::find($data); //-> Verifica se o dado posui caso não retorna um erro
+
+    return view('show')->with(['events' => $registro]);
   }
 }

@@ -27,7 +27,7 @@
         <div class="navbar-nav">
           <a class="nav-link active" aria-current="page" href="{{url('/contatos')}}">Contatos</a>
           <a class="nav-link" href="{{url('/events/create')}}">Criar Eventos</a>
-          <a class="nav-link" href="javascript:void(0)">Pricing</a>
+          <a class="nav-link" href="{{url('/searchevents',['id' => base64_encode(1)])}}">Saber mais</a>
           <a class="nav-link disabled" aria-disabled="true">Disabled</a>
         </div>
       </div>
