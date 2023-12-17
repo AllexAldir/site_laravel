@@ -59,6 +59,18 @@
                 </select>
               </div>
             </div>
+
+            <div class="form-group">
+              <input type="checkbox" name="items[]" value="teste1"> Cadeira
+              <input type="checkbox" name="items[]" value="teste1"> Banco
+              <input type="checkbox" name="items[]" value="teste1"> Sofá
+
+            </div>
+
+            <div class="form-group">
+              <label class="col-form-label" for="inputSuccess"><i class="fas fa-check"></i>Data</label>
+              <input type="date" class="form-control is-valid" id="date" name="date">
+            </div>
           </div>
           <button type="submit" class="btn btn-block btn-primary">Enviar</button>
         </form>

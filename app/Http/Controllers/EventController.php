@@ -22,13 +22,15 @@ class EventController extends Controller
   public function store(Request $dados)
   {
     //-> Armazenar dados no banco
-
+    //dd($dados->all());
     $event = new Event();
 
     $event->titulo = $dados->titulo;
     $event->descricao = $dados->descricao;
     $event->cidade = $dados->cidade;
     $event->tipo_evento = $dados->tipo_evento;
+    $event->items = $dados->items;
+    $event->date = $dados->date;
 
     $event->save();
 

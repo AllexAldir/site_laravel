@@ -15,9 +15,11 @@
             <h3 class="card-title">Eventos</h3>
           </div>
           <div class="card-body">
-
+            @if (count($arr) == 0)
+              <p>Não possui dados</p>
+            @endif
             @foreach ($arr as $registro)
-              
+
               <div class="row mt-4">
                 <div class="col-sm-4"> {{--Aqui para cada registro cria uma imagem--}}
                   <div class="position-relative">
